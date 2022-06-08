@@ -9,12 +9,12 @@ int main(void)
 {	char string[9] = "_putchar";
 	int n = 0;
 
-	while (n < 9)
+	while (n < 8)
 	{
 		_putchar(string[n]);
 		++n;
 	}
-	putchar(11);
+	putchar(10);
 }
 	return (0);
 	}
