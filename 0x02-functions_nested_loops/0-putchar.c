@@ -1,20 +1,24 @@
+#include <stdio.h>
 #include "main.h"
 /**
- * main - main function
+ * main-main-Entry point
  *
- * Return: End program
+ * Program to print _putchar,followed by a new line.
+ * Program is expected to return 0
+ * Return:Always 0 (Success)
  */
 
 int main(void)
-{	char string[8] = "_putchar";
-	int n = 0;
-
-	while (n < 8)
-	{
-		_putchar(string[n]);
-		++n;
-	}
-	putchar(10);
+{	
+ putchar('_');
+ putchar('p');
+ putchar('u');
+ putchar('t');
+ putchar('c');
+ putchar('h');
+ putchar('a');
+ putchar('r');
+ putchar('\n');
+ 
+ return (0);
 }
-	return (0);
-	}
