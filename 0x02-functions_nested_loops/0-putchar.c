@@ -1,21 +1,20 @@
 #include <stdio.h>
 #include "main.h"
+
 /**
- * main-main-Entry point
- * Program to print _putchar,followed by a new line.
- * Program is expected to return 0
- * Return:Always 0 (Success)
+ * main - Entry point
+ * Description: prints 'Holberton \n'
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-putchar('_');
-putchar('p');
-putchar('u');
-putchar('t');
-putchar('c');
-putchar('h');
-putchar('a');
-putchar('r');
-putchar('\n');
+char str[] = "_putchar\n";
+int i = 0;
+while (str[i] != '\0')
+{
+char c = str[i];
+_putchar(c);
+i++;
+}
 return (0);
 }
