@@ -1,15 +1,21 @@
 #include "main.h"
 
 /**
-* print_alphabet - print the alphabet
+ * print_alphabet_x10 - Make alphabet x10 times
+* function that prints 10 times the alphabet, in lowercase
+* Return: void
 */
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
-int l = 'a';
-while (a <= 'z')
+char c;
+int i = 0;
+while (i <= 9)
 {
-_putchar(a);
-++a;
+for (c = 'a'; c <= 'z'; c++)
+{
+_putchar(c);
 }
-_putchar(10);
+_putchar('\n');
+i++;
+}
 }
