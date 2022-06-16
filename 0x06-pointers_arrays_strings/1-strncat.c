@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _strncat -similar to _strcat serves the role of concatenating two strings using at most
- *  at most n bytes from src
+ * _strncat -serves the role of concatenating two strings using at most
+ *  n bytes from src
  * @dest: The string to be appended upon.
  * @src: The string to be appended to dest.
  * @n: The number of bytes from src to be appended to dest.
