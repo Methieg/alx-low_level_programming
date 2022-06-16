@@ -3,7 +3,7 @@
 
 /**
  * print_buffer - Prints a buffer 10 bytes at a time, starting with
- * the byte position, then showing the hex content,
+ * the byte position, then showing the hex content
  * then displaying printable charcaters.
  * @b: The buffer to be printed.
  * @size: The number of bytes to be printed from the buffer.
@@ -17,7 +17,8 @@ printf("%08x: ", byte);
 for (index = 0; index < 10; index++)
 {
 if ((index + byte) >= size)
-printf("  ");else
+printf("  ");
+else
 printf("%02x", *(b + index + byte));
 if ((index % 2) != 0 && index != 0)
 printf(" ");
