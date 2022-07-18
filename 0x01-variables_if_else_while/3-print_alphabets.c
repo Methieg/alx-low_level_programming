@@ -1,22 +1,27 @@
 #include <stdio.h>
 
 /**
- * main - main function
- * Return: End the program
+ * main - prints out the alphabet in lowercase and then uppercase
+ * Return: 0
  */
 
 int main(void)
+{
+char a = 'a';
 
+while (a <= 'z')
+{
+putchar(a);
+a++;
+}
+
+a = 'A';
+while (a <= 'Z')
 {
 
-char letter;
-
-for (letter = 'a'; letter <= 'z'; ++letter)
-
-printf("%c", letter);
-
-printf("\n");
-
+putchar(a);
+a++;
+}
+putchar('\n');
 return (0);
-
 }
