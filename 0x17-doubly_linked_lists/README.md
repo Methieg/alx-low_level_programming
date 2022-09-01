@@ -1,8 +1,7 @@
-#C - Doubly linked lists
+# 0x17-doubly_linked_lists
 
 
-##What is learnt in here is 
+## Things learnt:
 
->A doubly linked list is a lidt consisting of nodes inot which data may be stored in
-
->Being thus the case,the following project presents the use of doubly linked lists
+- What a doubly linked list is
+- How to use doubly linked lists
