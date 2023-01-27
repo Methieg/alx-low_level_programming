@@ -12,36 +12,28 @@
   *
   * Description: Prints the [sub]array being searched after each change.
   */
-int binary_search(int *array, size_t size, int value) {
-    if (array == NULL)
-        return -1;
+int binary_search(int *array, size_t size, int value)
+{
+	size_t i, left, right;
 
-    printf("Searching in array: ");
-    for (int i = 0; i < size; i++) {
-        printf("%d, ", array[i]);
-    }
-    printf("\n");
+	if (array == NULL)
+		return (-1);
 
-    int left = 0;
-    int right = size - 1;
-    int middle;
+	for (left = 0, right = size - 1; right >= left;)
+	{
+		printf("Searching in array: ");
+		for (i = left; i < right; i++)
+			printf("%d, ", array[i]);
+		printf("%d\n", array[i]);
 
-    while (left <= right) {
-        middle = left + (right - left) / 2;
-        printf("Searching in array: ");
-        for (int i = left; i <= right; i++) {
-            printf("%d, ", array[i]);
-        }
-        printf("\n");
+		i = left + (right - left) / 2;
+		if (array[i] == value)
+			return (i);
+		if (array[i] > value)
+			right = i - 1;
+		else
+			left = i + 1;
+	}
 
-        if (array[middle] == value) {
-            return middle;
-        } else if (array[middle] < value) {
-            left = middle + 1;
-        } else {
-            right = middle - 1;
-        }
-    }
-
-    return -1;
+	return (-1);
 }
