@@ -12,5 +12,6 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i <= argc; i++)
 		printf("The arguments received are as follows : %s\n", argv[i]);
+
 	return (0);
 }
