@@ -8,17 +8,6 @@
  */
 int main(int argc, char *argv[])
 {
-	int i;
-
-	if (argc == 1)
-	{
-		printf("number of argument(s) passed in : %d\n", argc - 1);
-	}
-	else
-	{
-			for (i = 0; *argv; argv++)
-				;
-			printf("number of argument(s): %d\n", i - 1);
-	}
+	printf("The number of arguments passed into main are: %d\n", argc - 1);
 	return (0);
 }
