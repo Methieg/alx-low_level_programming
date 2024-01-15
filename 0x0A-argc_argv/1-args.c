@@ -10,7 +10,6 @@ int main(int argc, char *argv[])
 {
 	int i;
 
-
 	if (argc == 1)
 	{
 		printf("number of argument(s) passed in : %d\n", argc - 1);
@@ -18,10 +17,8 @@ int main(int argc, char *argv[])
 	else
 	{
 			for (i = 0; *argv; argv++)
-			{
 				;
 			printf("number of argument(s): %d\n", i - 1);
-			}
 	}
 	return (0);
 }
