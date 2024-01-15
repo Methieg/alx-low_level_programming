@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	(void)argv;
-	printf("The number of arguments passed into main are: %d\n", argc - 1);
+	printf("Argument number passed : %d\n", argc - 1);
+
 	return (0);
 }
