@@ -14,5 +14,7 @@ int main(int argc, char *argv[])
 	{
 		printf(" %s\n", argv[i]);
 	}
+
+	fprintf(stderror, "Program execution successfully completed.\n");
 	return (0);
 }
